@@ -9,23 +9,33 @@ var mobilenav = document.querySelector('.mobile-nav');
 /*console.dir(selectbutton);*/
 for ( var i = 0;i<selectbutton.length;i++){
     selectbutton[i].addEventListener("click", function(){
-      modal.style.display = "block";
-      backdrop.style.display = "block"; 
+     // modal.style.display = "block";
+      //backdrop.style.display = "block"; 
+      //modal.className = 'open';
+      modal.classList.add('open');
+      backdrop.classList.add('open');
+
     })
 }
 backdrop.addEventListener("click",function(){
-  mobilenav.style.display = 'none';
+  //mobilenav.style.display = 'none';
+  mobilenav.classList.remove('open');
   closemodal();
 });
 modalnobutton.addEventListener( "click",closemodal);
 
 function closemodal(){
-  backdrop.style.display = 'none';
-  modal.style.display = 'none';
+  //backdrop.style.display = 'none';
+  //modal.style.display = 'none';
+  modal.classList.remove('open');
+  backdrop.classList.remove('open');
+
 }
 togglebutton.addEventListener('click',function(){
-  mobilenav.style.display = 'block';
-  backdrop.style.display = 'block';
+  //mobilenav.style.display = 'block';
+  //backdrop.style.display = 'block';
+  mobilenav.classList.add('open');
+  backdrop.classList.add('open');
 });
 
 
