@@ -5,6 +5,7 @@ var selectbutton = document.querySelectorAll(".plan button");
 var togglebutton = document.querySelector('.toggle-button');
 var mobilenav = document.querySelector('.mobile-nav');
 
+console.dir(backdrop.style['background-image'])
 //console.dir(backdrop);
 /*console.dir(selectbutton);*/
 for ( var i = 0;i<selectbutton.length;i++){
@@ -22,13 +23,17 @@ backdrop.addEventListener("click",function(){
   mobilenav.classList.remove('open');
   closemodal();
 });
-modalnobutton.addEventListener( "click",closemodal);
+if (modalnobutton) {
+  modalnobutton.addEventListener( "click",closemodal);  
+}
 
 function closemodal(){
   //backdrop.style.display = 'none';
   //modal.style.display = 'none';
+ if (modal) {
   modal.classList.remove('open');
-  backdrop.classList.remove('open');
+  backdrop.classList.remove('open');  
+ }
 
 }
 togglebutton.addEventListener('click',function(){
