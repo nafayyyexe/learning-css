@@ -1,0 +1,40 @@
+ Row:
+ if we use row for the flex container then the starting point would be from the top left corner of the box
+ then the cross axis will go down and stick to the left 
+
+ Row-reverse:
+ if we use row reverse then the starting point would be top right and the cross will go down and stick to the rigth side of the flex container 
+
+ column:
+ if we use column the main axis would start from the top left but will go down to the bottom left and the cross axis would
+ aslo start from top left and go staright to the top right corner.
+
+ column-reverse:
+ if we use this then the main axis would start from bottm left and go to top left and the cross axis would go from 
+ bottom left to bottom right corner.
+
+ align-items:
+ if we use this then the contents would get aligned and their heights may change according to this property.
+ this only works in flexbox and can centre align and have different alignments. if used woth columns then can align in centre and 
+ decrease the width but if used with row then aling in vertical centre and decrease the height.
+
+if we use flex-start value for this alignment then the items would start aligning from where the cross axis starts.
+if we use flex-end value for this alignment then the items would start aligning from where the cross axis ends. can be used with both columns 
+and rows.
+ 
+align items always refers to the cross axis.
+
+ORDER:
+if we use this then the we can change the order of the flex child like 
+wecan place the 4th iten to the first place by just writing  "order: 1;"
+
+ALIGN-SELF:
+ if we use felx start then it would consider the starting of the cross axis .
+ this changes the position for only one flex child
+
+FLEX-GROW:
+it is used for a flex child to cover up the remaining space by increasing its width.
+
+FLEX-SHRINK:
+it allows you to specify which item would shrink first if there is less space.
+
