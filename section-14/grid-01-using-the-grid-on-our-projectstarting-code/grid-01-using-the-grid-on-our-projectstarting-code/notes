@@ -1,0 +1,9 @@
+we can turn anything to grid by gving the value grid to the display
+"display: grid;"
+
+GRID-COLUMN-START:
+it would allow us to explicitly position the grid elements by column start and column end value.
+
+GRID-ROW-START & GRID-ROW-END:
+it allows us to position elements through the rows.
+
